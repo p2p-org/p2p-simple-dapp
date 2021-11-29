@@ -1,0 +1,73 @@
+.container  {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+} 
+
+.header {
+    display: flex;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.balance div {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.token-logo {
+    display: inline-flex;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    background: rgba(255, 255, 255, 0.05) none repeat scroll 0% 0%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.apps-conatiner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    padding: 10px;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.tab-active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.tab:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.tab-panel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}

@@ -10,9 +10,11 @@ import {
   getSolletWallet,
   getTorusWallet,
 } from '@solana/wallet-adapter-wallets';
-import {WalletDisconnectButton, WalletModalProvider, WalletMultiButton} from '@solana/wallet-adapter-react-ui';
+import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import {clusterApiUrl} from '@solana/web3.js';
 import {P2PConfiguration, P2PWalletAdapter} from "@solana/wallet-adapter-p2p"
+
+import { Main } from './Main'
 
 // Default styles that can be overridden by your app
 require('@solana/wallet-adapter-react-ui/styles.css');
@@ -51,8 +53,7 @@ export const Wallet = () => {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
-          <WalletMultiButton/>
-          <WalletDisconnectButton/>
+          <Main />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>

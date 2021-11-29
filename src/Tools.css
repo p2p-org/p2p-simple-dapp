@@ -1,0 +1,63 @@
+.send-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.send-single {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.send-single div,
+.send-multiple div {
+    margin-bottom: 5px;
+}
+
+.send-multiple {
+    width: 100%;
+}
+
+.signatures {
+    flex: 1 1 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.signatures div:first-child {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 94%;
+    font-size: 16px;
+    color: #cacaca;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4e44ce;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
